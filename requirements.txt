@@ -1,0 +1,6 @@
+Django==1.10.5
+elasticsearch==5.0.1
+elasticsearch-dsl==5.0.0
+python-dateutil==2.6.0
+six==1.10.0
+urllib3==1.19.1
