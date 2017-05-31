@@ -2,7 +2,7 @@ from elasticsearch_dsl.connections import connections
 from elasticsearch_dsl import DocType, Text, Date, Search
 from elasticsearch.helpers import bulk
 from elasticsearch import Elasticsearch
-from . import models
+import models
 
 # Create a connection to ElasticSearch
 connections.create_connection()
