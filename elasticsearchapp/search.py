@@ -1,5 +1,5 @@
 from elasticsearch_dsl.connections import connections
-from elasticsearch_dsl import DocType, Text, Date, Search
+from elasticsearch_dsl import Document, Text, Date, Search
 from elasticsearch.helpers import bulk
 from elasticsearch import Elasticsearch
 from . import models
@@ -8,7 +8,7 @@ from . import models
 connections.create_connection()
 
 # ElasticSearch "model" mapping out what fields to index
-class BlogPostIndex(DocType):
+class BlogPostIndex(Document):
     author = Text()
     posted_date = Date()
     title = Text()
