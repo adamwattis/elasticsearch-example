@@ -14,8 +14,8 @@ class BlogPostIndex(Document):
     title = Text()
     text = Text()
 
-    class Meta:
-        index = 'blogpost-index'
+    class Index:
+      name = 'blogpost-index'
 
 # Bulk indexing function, run in shell
 def bulk_indexing():
